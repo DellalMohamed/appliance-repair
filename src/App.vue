@@ -7,7 +7,7 @@
             <v-app-bar-nav-icon></v-app-bar-nav-icon>
           </template>
 
-          <v-app-bar-title>Title</v-app-bar-title>
+          <v-app-bar-title>Appliance Repair</v-app-bar-title>
 
           <v-spacer></v-spacer>
           <nav class="d-flex justify-space-between ga-2">
@@ -23,48 +23,38 @@
         <v-main>
           <v-container class="pa-0 bg-white" fluid>
             <v-row class="intro">
-              <v-img
-                aspect-ratio="16/9"
-                cover
-                src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-                alt="77"
-              >
-                <v-col cols="12  pa-16">
-                  <v-card
-                    class="intro_card pa-15 rounded-xl text-start"
-                    elevation="2"
-                  >
-                    <h1 class="rounded-xl mt">
-                      Same day Halifax appliance repair
-                    </h1>
-                    <v-actions>
-                      <v-checkbox
-                        class="hjk"
-                        label="Flexible Call-To-Meet Appointments"
-                      ></v-checkbox>
-                      <v-checkbox
-                        label="Best warranty on Parts and Labor"
-                      ></v-checkbox>
-                      <v-checkbox label="Truck Stocked With Parts"></v-checkbox>
-                    </v-actions>
-                    <v-btn class="bg-error">Make Appointment</v-btn>
-                  </v-card>
-                </v-col>
-              </v-img>
+              <v-col cols="12  pa-16">
+                <v-card
+                  class="intro_card pa-15 rounded-xl text-start"
+                  elevation="2"
+                >
+                  <h1 class="rounded-xl mt">
+                    Same day Halifax appliance repair
+                  </h1>
+                  <v-actions>
+                    <v-checkbox
+                      class="hjk"
+                      label="Flexible Call-To-Meet Appointments"
+                    ></v-checkbox>
+                    <v-checkbox
+                      label="Best warranty on Parts and Labor"
+                    ></v-checkbox>
+                    <v-checkbox label="Truck Stocked With Parts"></v-checkbox>
+                  </v-actions>
+                  <v-btn class="bg-error">Make Appointment</v-btn>
+                </v-card>
+              </v-col>
 
               <!------rating section-------->
               <section class="rating w-100">
                 <v-row class="d-flex justify-space-between">
                   <v-col cols="12" class="card_col d-flex justify-center">
                     <v-card class="ma-0" elevation="0">
-                      <v-img
-                        src="../src/assets/Frame 95.svg"
-                        style="width: 47px; height: 48px"
-                      ></v-img>
-                      <v-card-title>Google</v-card-title>
+                      <div><img src="@/assets/Frame 95.svg" alt="" /></div>
+                      <v-card-title class="rating_title">Google</v-card-title>
                       <h3>4.9</h3>
                       <v-rating
-                        class="d-flex justify-space-between"
+                        class="rating_el d-flex justify-space-between ga-12"
                         color="warning"
                         length="5"
                         size="30"
@@ -73,14 +63,11 @@
                       <span>196 reviews</span>
                     </v-card>
                     <v-card class="ma-0" elevation="0">
-                      <v-img
-                        src="../src/assets/Frame 95.svg"
-                        style="width: 47px; height: 48px"
-                      ></v-img>
-                      <v-card-title>Google</v-card-title>
+                      <div><img src="@/assets/star.svg" alt="" /></div>
+                      <v-card-title>Trustpilot</v-card-title>
                       <h3>4.9</h3>
                       <v-rating
-                        class="d-flex justify-space-between"
+                        class="rating_el d-flex justify-space-between"
                         color="warning"
                         length="5"
                         size="30"
@@ -89,14 +76,13 @@
                       <span>196 reviews</span>
                     </v-card>
                     <v-card class="ma-0" elevation="0">
-                      <v-img
-                        src="../src/assets/Frame 95.svg"
-                        style="width: 47px; height: 48px"
-                      ></v-img>
-                      <v-card-title>Google</v-card-title>
-                      <h3>4.9</h3>
+                      <div>
+                        <img src="../src/assets/pngfind 1.svg" alt="" />
+                      </div>
+                      <v-card-title>HomeStars</v-card-title>
+                      <h3>98%</h3>
                       <v-rating
-                        class="d-flex justify-space-between"
+                        class="rating_el d-flex justify-space-between"
                         color="warning"
                         length="5"
                         elevation="0"
@@ -155,28 +141,21 @@
                 </v-row>
                 <v-btn class="bg-error" text-blue>Make Appointment</v-btn>
               </section>
-              <section class="hero pa-0">
-                <v-img
-                  class="pa-15"
-                  aspect-ratio="16/9"
-                  cover
-                  src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-                  alt="77"
-                >
-                  <v-card class="hero_card text-start border-md ml-auto">
-                    <h1>Appliance repair service near me</h1>
-                    <p>
-                      We repair a wide range of home appliances and<br />
-                      make sure they work smoothly after installation,<br />
-                      maintenance, and repair. All our specialists are<br />
-                      well-trained and have certificates to offer home<br />appliance
-                      repair services
-                    </p>
-                    <v-btn class="bg-error">Make Appointment</v-btn>
-                  </v-card>
-                </v-img>
+              <!----------hero section----------->
+              <section class="hero">
+                <v-card class="hero_card text-start border-md ml-auto">
+                  <h1>Appliance repair service near me</h1>
+                  <p>
+                    We repair a wide range of home appliances and<br />
+                    make sure they work smoothly after installation,<br />
+                    maintenance, and repair. All our specialists are<br />
+                    well-trained and have certificates to offer home<br />appliance
+                    repair services
+                  </p>
+                  <v-btn class="bg-error">Make Appointment</v-btn>
+                </v-card>
               </section>
-              <!------our servisec--------->
+              <!------our services--------->
               <section class="services">
                 <v-card class="text-center mx-auto elevation-0">
                   <h1>Our Services</h1>
@@ -188,51 +167,99 @@
                   </p>
                   <v-row>
                     <v-col class="d-flex justify-center">
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/VectorTrnsp.svg" alt="" />
+                        </div>
                         <v-card-title class="service_title"
-                          >Refrigerator Repair</v-card-title
+                          >Refrigerator<br />
+                          Repair</v-card-title
                         >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector22.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector3.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector4.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img class="mb-5" src="@/assets/Vector5.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
                     </v-col>
                   </v-row>
                   <v-row>
                     <v-col class="d-flex justify-center">
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector6.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector7.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img class="mb-5" src="@/assets/Vector8.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mr-10 mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector9.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
-                      <v-card class="service_card mb-8">
-                        <v-img></v-img>
-                        <v-card-title>Refrigerator Repair</v-card-title>
+                      <v-card class="service_card mr-10 mb-8" elevation="0">
+                        <div class="service_img_cont">
+                          <img src="@/assets/Vector10.svg" alt="" />
+                        </div>
+                        <v-card-title class="service_title"
+                          >Refrigerator<br />
+                          Repair</v-card-title
+                        >
                       </v-card>
                     </v-col>
                   </v-row>
@@ -240,8 +267,10 @@
               </section>
               <!----Order section----->
               <section class="order">
-                <div class="gruanteed bg-red rounded-circle">
-                  <div class="gruanteed_cont"><v-img>4545</v-img></div>
+                <div class="gruanteed rounded-circle">
+                  <div class="gruanteed_cont">
+                    <img src="@/assets/Group 34.svg" alt="" />
+                  </div>
                 </div>
                 <v-row>
                   <v-col>
@@ -261,7 +290,10 @@
                 </v-row>
                 <v-row>
                   <v-col class="job_pay d-flex justify-center">
-                    <v-card>
+                    <v-card color="transparent" elevation="0">
+                      <div class="img_cont">
+                        <img src="../src/assets/Vector11.svg" alt="" />
+                      </div>
                       <v-card-text class="job_pay_title">
                         Book Online Or With Phone
                       </v-card-text>
@@ -273,13 +305,18 @@
                     </v-card>
                     <v-divider
                       class="divider1"
-                      color="black"
+                      color="white"
                       length="164"
                       :thickness="2"
                     ></v-divider>
-                    <v-card>
-                      <v-card-text> Book Online Or With Phone </v-card-text>
-                      <v-card-text
+                    <v-card color="transparent" elevation="0">
+                      <div class="img_cont">
+                        <img src="../src/assets/Vector12.svg" alt="" />
+                      </div>
+                      <v-card-text class="job_pay_title">
+                        Book Online Or With Phone
+                      </v-card-text>
+                      <v-card-text class="job_pay_text"
                         >Lorem ipsum dolor sit amet,<br />
                         consectetur adipiscing elit. In<br />
                         semper pretium quam</v-card-text
@@ -287,13 +324,18 @@
                     </v-card>
                     <v-divider
                       class="divider1"
-                      color="black"
+                      color="white"
                       length="164"
                       :thickness="2"
                     ></v-divider>
-                    <v-card>
-                      <v-card-text> Book Online Or With Phone </v-card-text>
-                      <v-card-text
+                    <v-card color="transparent" elevation="0">
+                      <div class="img_cont">
+                        <img src="../src/assets/Vector13.svg" alt="" />
+                      </div>
+                      <v-card-text class="job_pay_title">
+                        Book Online Or With Phone
+                      </v-card-text>
+                      <v-card-text class="job_pay_text"
                         >Lorem ipsum dolor sit amet,<br />
                         consectetur adipiscing elit. In<br />
                         semper pretium quam</v-card-text
@@ -301,13 +343,18 @@
                     </v-card>
                     <v-divider
                       class="divider1"
-                      color="blue"
+                      color="white"
                       length="164"
                       :thickness="2"
                     ></v-divider>
-                    <v-card>
-                      <v-card-text> Book Online Or With Phone </v-card-text>
-                      <v-card-text
+                    <v-card color="transparent" elevation="0">
+                      <div class="img_cont">
+                        <img src="../src/assets/Vector14.svg" alt="" />
+                      </div>
+                      <v-card-text class="job_pay_title">
+                        Book Online Or With Phone
+                      </v-card-text>
+                      <v-card-text class="job_pay_text"
                         >Lorem ipsum dolor sit amet,<br />
                         consectetur adipiscing elit. In<br />
                         semper pretium quam</v-card-text
@@ -328,9 +375,11 @@
                   </p>
                 </v-card>
                 <v-row>
-                  <v-col>
+                  <v-col class="testim_col">
+                    <div class="img_cont">
+                      <img src="../src/assets/Vector2.svg" alt="" />
+                    </div>
                     <v-card class="testimonial_card text-start pa-8">
-                      <v-img></v-img>
                       <v-card-text class="testimonial_text"
                         >Praesent vitae nisl eget eros pharetra gravida ut sit
                         amet erat. Suspendisse ullamcorper lobortis fermentum.
@@ -345,9 +394,11 @@
                       </v-card-subtitle>
                     </v-card>
                   </v-col>
-                  <v-col>
+                  <v-col class="testim_col">
+                    <div class="img_cont">
+                      <img src="../src/assets/Vector2.svg" alt="" />
+                    </div>
                     <v-card class="testimonial_card text-start pa-8">
-                      <v-img></v-img>
                       <v-card-text class="testimonial_text"
                         >Praesent vitae nisl eget eros pharetra gravida ut sit
                         amet erat. Suspendisse ullamcorper lobortis fermentum.
@@ -432,12 +483,9 @@
                     <v-col
                       class="d-flex justify-space-around mx-auto pa-0 w-100"
                     >
-                      <v-card
-                        class="contact contact_us bg-transparent"
-                        elevation="0"
-                      >
-                        <div class="icon_cont">
-                          <v-icon>mdi-home</v-icon>
+                      <v-card class="contact bg-transparent" elevation="0">
+                        <div class="img_cont">
+                          <img src="../src/assets/Vector_c1.svg" alt="" />
                         </div>
                         <v-card-title class="contact-title"
                           >Office</v-card-title
@@ -447,34 +495,26 @@
                           Halifax, ab, Canada
                         </v-card-text>
                       </v-card>
-                      <v-card
-                        class="contact contact_us bg-transparent"
-                        elevation="0"
-                      >
-                        <div class="icon_cont">
-                          <v-icon>mdi-home</v-icon>
+                      <v-card class="contact bg-transparent" elevation="0">
+                        <div class="img_cont">
+                          <img src="../src/assets/Vector_c2.svg" alt="" />
                         </div>
                         <v-card-title class="contact-title"
-                          >Office</v-card-title
+                          >Make a call</v-card-title
                         >
                         <v-card-text class="contact-text">
-                          68 Street North-west,<br />
-                          Halifax, ab, Canada
+                          (866) 934-5887
                         </v-card-text>
                       </v-card>
-                      <v-card
-                        class="contact contact_us bg-transparent"
-                        elevation="0"
-                      >
-                        <div class="icon_cont">
-                          <v-icon>mdi-home</v-icon>
+                      <v-card class="contact bg-transparent" elevation="0">
+                        <div class="img_cont">
+                          <img src="../src/assets/Vector_c3.svg" alt="" />
                         </div>
                         <v-card-title class="contact-title"
-                          >Office</v-card-title
+                          >Send me email</v-card-title
                         >
                         <v-card-text class="contact-text">
-                          68 Street North-west,<br />
-                          Halifax, ab, Canada
+                          Send me email
                         </v-card-text>
                       </v-card>
                     </v-col>
@@ -564,14 +604,36 @@
 <style lang="scss">
 //--------intro----------
 .intro {
+  background-image: url("@/assets/imagePl.png");
+  width: 100%;
   .intro_card {
     width: 529px;
   }
 }
+//----rating--------------
 .rating {
   .card_col {
     width: 182px;
     gap: 100px;
+    img {
+      margin-bottom: 24px;
+    }
+    .rating_title {
+      font-family: "Inter";
+      font-size: 24px;
+      font-weight: 800 bold;
+    }
+    h3 {
+      font-family: "Inter";
+      font-size: 48px;
+      font-weight: 800 bold;
+      margin-bottom: 11px;
+    }
+    .rating_el {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+    }
   }
 }
 .about {
@@ -610,6 +672,7 @@
 .hero {
   width: 1443px;
   padding: 96px 102px;
+  background-image: url("../src/assets/home-appliance-repair.svg");
   .hero_card {
     width: 529px;
     padding: 60px;
@@ -651,9 +714,20 @@
     width: 156px;
     height: 159px;
     margin-right: 40px;
-    background-color: #c70039;
+    background-image: url("../src/assets/Vector.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .service_img_cont {
+      margin: 30px auto 10px;
+    }
     .service_title {
       font-size: 16px;
+      padding: 0;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -679,6 +753,8 @@
       position: absolute;
       top: 10px;
       left: 10px;
+      display: flex;
+      justify-content: center;
     }
   }
   .pay {
@@ -697,6 +773,16 @@
     }
   }
   .job_pay {
+    .img_cont {
+      max-width: 52px;
+      min-height: 52px;
+      padding: 13px 0;
+      background-color: #c70039;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+    }
     .job_pay_title {
       font-family: "Inter";
       font-size: 18px;
@@ -708,6 +794,7 @@
       font-family: "Inter";
       font-size: 16px;
       font-weight: 400;
+      padding: 0;
     }
     .divider1 {
       margin: 25px -67px;
@@ -739,26 +826,35 @@
       font-size: 18px;
     }
   }
-  .testimonial_card {
-    width: 499px;
-    .testimonial_text {
-      font-family: "Inter";
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 59px;
+  .testim_col {
+    position: relative;
+    .img_cont {
+      position: absolute;
+      top: 0;
+      left: 30px;
+      z-index: 2;
     }
-    .testimonial_title {
-      padding: 0;
-      font-family: "Inter";
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
-    .testimonial_subtitle {
-      font-family: "Inter";
-      font-size: 16px;
-      font-weight: 400;
+    .testimonial_card {
+      width: 499px;
+      .testimonial_text {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 59px;
+      }
+      .testimonial_title {
+        padding: 0;
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .testimonial_subtitle {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -808,8 +904,17 @@
   }
   .contacts {
     .contact {
-      .icon-cont {
-        background-color: #f5390a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .img_cont {
+        width: 52px;
+        height: 52px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .contact-title {
         font-family: "Inter";
@@ -824,6 +929,8 @@
         font-weight: 400;
         font-size: 16px;
         color: #fff;
+        padding: 0;
+        margin-bottom: 62px;
       }
     }
   }
